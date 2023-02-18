@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image:radial-gradient(hotpink,lime,yellow,aqua);
+            
+        }
+        #div{
+            position: relative;
+            width: 40%;
+            height: 80%;
+            background-color: rgba(0, 0, 139, 0.258);
+            border-radius: 2%;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            padding: 5px;
+            outline: none;
+            border: groove 10px rgb(155,155,155);
+            box-shadow: 2px 2px 5px black;
+            border: 2px solid white;
+           
+        }
+        .a{
+            top: 10vh;
+            left: 5vw;
+            margin: 5px;
+            margin-top: 20px;
+            position: relative;
+            width:15% ;
+            height: 6vh;
+            background-color: black;
+            color: white;
+            font-size: 24px;
+            box-shadow: 2px 2px 2px  ;
+
+
+        }
+        #display
+        {
+            width: 75%;
+            height: 30px;
+            position: absolute;
+            top: 5%;
+            left: 9%;
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            padding: 5px;
+            outline: none;
+            border: groove 10px rgb(39,16,16);
+            box-shadow: 2px 2px 2px lime;
+        }
+        #clear
+        {
+            position: absolute;
+           margin-top:300px ;
+            width: 30%;
+            font-size: 24px;
+            left: 5vw;
+            background-color: lime;
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px black;
+            margin-left: 100px;
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+    <form name="cform">
+        <input name="Ans" id="display">
+        <br>
+         
+        <input type="button" value="1" onclick="cform.Ans.value +='1'" class="a">
+        <input type="button" value="2" onclick="cform.Ans.value +='2'" class="a">
+        <input type="button" value="3" onclick="cform.Ans.value +='3'" class="a">
+        <input type="button" value="+" onclick="cform.Ans.value +='+'" class="a"><br>
+        <input type="button" value="4" onclick="cform.Ans.value +='4'" class="a">
+        <input type="button" value="5" onclick="cform.Ans.value +='5'" class="a">
+        <input type="button" value="6" onclick="cform.Ans.value +='6'" class="a">
+        <input type="button" value="-" onclick="cform.Ans.value +='-'" class="a"><br>
+        <input type="button" value="7" onclick="cform.Ans.value +='7'" class="a">
+        <input type="button" value="8" onclick="cform.Ans.value +='8'" class="a">
+        <input type="button" value="9" onclick="cform.Ans.value +='9'" class="a">
+        <input type="button" value="x" onclick="cform.Ans.value +='*'" class="a"><br>
+        <input type="button" value="%" onclick="cform.Ans.value +='1'" class="a">
+        <input type="button" value="0" onclick="cform.Ans.value +='2'" class="a">
+        <input type="button" value="." onclick="cform.Ans.value +='3'" class="a">
+        <input type="button" value="/" onclick="cform.Ans.value +='/'" class="a"><br>
+        <input type="button" value="=" onclick="cform.Ans.value =eval(cform.Ans.value)" class="a">
+        <input type="button" value="c"  id="clear" onclick="cform.Ans.value =' '" class="a">
+        
+    
+        
+        
+
+
+
+    </form>
+</div>
+    
+</body>
+</html>
